@@ -67,7 +67,7 @@ nav, p, section, article {
   height: auto;
   display: block;
 }
-h1{
+.about-page h1{
   position: absolute;
   top: 20px;
   width: 100%;
@@ -196,6 +196,7 @@ main.contact-page {
   padding: 1rem;
   color: black;
 }
+
 
 .map iframe {
   width: 100%;
