@@ -304,38 +304,150 @@ footer .wireframe-link a {
   font-size: 0.9rem;
 }
 
-/* trip page */
-
-.trips-page .hero h1{
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-  border-bottom: 1px solid var(--primary-color);
-  color: var(--primary-color);
+/* index page */
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 237, 183, 0.9); /* Accent1 with transparency */
+  color: var(--accent2-color);
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
 
-/* index page */
+/* CTA Section */
+.cta {
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+}
 
-.trip img {
+.cta h2 {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: var(--heading-font);
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1ab0a0;
+}
+
+/* Purpose Section (Grid) */
+.purpose-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--accent1-color);
+  color: black;
+}
+
+.purpose-grid .grid-item {
+  text-align: center;
+}
+
+.purpose-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 2rem;
+  color: black;
+}
+
+.newsletter h2 {
+  font-family: var(--heading-font);
+  margin-bottom: 1rem;
+  color: var(--accent2-color);
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  padding: 0.5rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: var(--body-font);
+}
+
+.newsletter button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: var(--heading-font);
+}
+
+.newsletter button:hover {
+  background-color: #1ab0a0;
+}
+
+.purpose-grid img {
   width: 100px;
   height: 100px;
   border-radius: 8px;
 }
 
-.trip p {
-  font-size: 1rem;
-  color: var(--accent2-color);
+/* trip page */
 
+.trip-table table {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: white;
 }
 
-.trip-cta{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--accent1-color);
+.trip-table th,
+.trip-table td {
   padding: 1rem;
-  border-radius: 10px;
-  margin-top: 1rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-family: var(--body-font);
   color: black;
-  text-decoration: none;
+}
+
+.trip-table th {
+  background-color: var(--primary-color);
+  color: white;
 }
