@@ -303,3 +303,39 @@ footer .wireframe-link a {
   text-decoration: underline;
   font-size: 0.9rem;
 }
+
+/* trip page */
+
+.trips-page .hero h1{
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* index page */
+
+.trip img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.trip p {
+  font-size: 1rem;
+  color: var(--accent2-color);
+
+}
+
+.trip-cta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--accent1-color);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  color: black;
+  text-decoration: none;
+}
